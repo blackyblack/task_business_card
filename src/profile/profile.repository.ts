@@ -8,12 +8,6 @@ export class ProfileRepository {
     profile() {
         return this.storage.profile.findUnique({
             where: { key: 1 },
-            select: {
-                name: true,
-                description: true,
-                githubUrl: true,
-                linkedinUrl: true,
-            },
         });
     }
 
