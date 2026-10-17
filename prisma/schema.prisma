@@ -1,0 +1,38 @@
+generator client {
+  provider            = "prisma-client"
+  output              = "../src/generated/prisma"
+  moduleFormat        = "esm"
+  importFileExtension = "js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model Profile {
+  key         Int     @id @default(1)
+  name        String
+  description String
+  githubUrl   String
+  linkedinUrl String?
+}
+
+model Skill {
+  id   String @id
+  name String
+}
+
+model Experience {
+  id           String    @id
+  company      String
+  position     String
+  startDate    DateTime  @db.Date
+  endDate      DateTime? @db.Date
+  achievements String[]
+}
+
+model Project {
+  id   String @id
+  name String
+  url  String
+}

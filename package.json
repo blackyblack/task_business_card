@@ -1,0 +1,36 @@
+{
+    "name": "task-bio",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "format": "prettier --write .",
+        "build": "prisma generate && tsc",
+        "start": "npm run db:prepare && node dist/src/main.js",
+        "db:prepare": "prisma db push && prisma db seed"
+    },
+    "engines": {
+        "node": "24"
+    },
+    "dependencies": {
+        "@apollo/server": "5",
+        "@as-integrations/express5": "1",
+        "@nestjs/apollo": "14",
+        "@nestjs/common": "12",
+        "@nestjs/core": "12",
+        "@nestjs/graphql": "14",
+        "@nestjs/platform-express": "12",
+        "@prisma/adapter-pg": "7",
+        "@prisma/client": "7",
+        "dotenv": "17",
+        "graphql": "16",
+        "prisma": "7",
+        "reflect-metadata": "0",
+        "rxjs": "7"
+    },
+    "devDependencies": {
+        "prettier": "3",
+        "@types/node": "24",
+        "ts-node": "10",
+        "typescript": "5"
+    }
+}

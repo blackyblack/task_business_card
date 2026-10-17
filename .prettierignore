@@ -1,0 +1,7 @@
+node_modules/
+dist/
+src/generated/
+.npm-cache/
+.local/
+package-lock.json
+Readme.md
