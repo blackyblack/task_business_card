@@ -2,8 +2,7 @@ import type { Prisma } from "../src/generated/prisma/client.js";
 
 export const profile: Prisma.ProfileCreateInput = {
     name: "Andrew",
-    description:
-        "My profile",
+    description: "My profile",
     githubUrl: "https://github.com/blackyblack",
     linkedinUrl: null,
 };
@@ -19,9 +18,7 @@ export const experience: Prisma.ExperienceCreateManyInput[] = [
         position: "Position",
         startDate: "2026-01-01",
         endDate: null,
-        achievements: [
-            "Achievement",
-        ],
+        achievements: ["Achievement"],
     },
 ];
 

@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "node",
+            "request": "launch",
+            "preLaunchTask": "Prepare database",
+            "runtimeArgs": ["--loader", "./.vscode/ts-node-loader.mjs"],
+            "program": "${workspaceFolder}/src/main.ts",
+            "cwd": "${workspaceFolder}",
+            "skipFiles": [
+                "<node_internals>/**",
+                "${workspaceFolder}/node_modules/**"
+            ],
+            "console": "integratedTerminal"
+        }
+    ]
+}
