@@ -16,7 +16,7 @@ export const experience: Prisma.ExperienceCreateManyInput[] = [
         id: "1",
         company: "Company",
         position: "Position",
-        startDate: "2026-01-01",
+        startDate: new Date("2026-01-01T00:00:00Z"),
         endDate: null,
         achievements: ["Achievement"],
     },
